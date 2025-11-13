@@ -6,31 +6,35 @@
   <title>Document library</title>
   <style>
     :root{
-      --bg:#0b0f17; --panel:#0f172a; --ink:#e6edf6; --muted:#9fb0c9; --accent:#60a5fa; --border:#1f2a44;
-      --card:#0d1324; --chip:#111a31; --shadow: 0 10px 30px rgba(0,0,0,.25);
+      --bg:#0b0f17; --panel:#0f172a; --ink:#e6edf6; --muted:#7498ce; --accent:#60a5fa; --border:#1f2a44;
+      --card:#f0f0f0; --chip:#0b0f17; --shadow: 0 10px 30px rgba(0,0,0,.25); --hd:#333
     }
     *{box-sizing:border-box}
     html,body{height:100%;margin:0}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;background:radial-gradient(1000px 500px at 15% -10%,#112342,transparent),var(--bg);color:var(--ink)}
+    body{font-family: 'Segoe UI', sans-serif;}
     a{color:var(--accent);text-decoration:none}
     a:hover{text-decoration:underline}
 
-    header{position:sticky;top:0;z-index:10;background:linear-gradient(180deg,rgba(13,19,36,.95),rgba(13,19,36,.7));backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--border)}
+    header{position:sticky;top:0;z-index:10;color:var(--ink);background-color:var(--hd);border-bottom:1px solid var(--border)}
     .wrap{max-width:1100px;margin:0 auto;padding:18px}
-    h1{margin:0;font-size:clamp(1.4rem,3vw,2rem)}
-    .subtitle{color:var(--muted);margin-top:6px}
+    h1 {
+      font-size: 3rem;
+      font-weight: 300;
+      margin: 0;
+    }
+    .subtitle{margin-top:6px}
 
     main .wrap{padding-top:22px}
     .grid{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:16px}
     @media (min-width:700px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
     @media (min-width:1000px){.grid{grid-template-columns:repeat(4,minmax(0,1fr));}}
 
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),transparent),var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow);min-height:200px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:10px;box-shadow:var(--shadow);min-height:200px}
     .card:hover{transform:translateY(-2px);transition:transform .15s ease}
 
-    .doc-title{font-weight:700;line-height:1.25}
+    .doc-title{font-weight:300;line-height:1.25}
     .doc-title u{text-underline-offset:3px;text-decoration-thickness:2px}
-    .desc{color:var(--muted);font-size:.95rem}
+    .desc{color:var(--muted);font-size:1rem;font-weight:300;}
 
     .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
     .chip{background:var(--chip);border:1px solid #213056;border-radius:999px;padding:4px 9px;font-size:.72rem;color:#c7d2e6}
@@ -44,16 +48,15 @@
   <header>
     <div class="wrap">
       <h1>Document Library</h1>
-      <div class="subtitle">A curated collection of my personal insights, opinions, and reflections on the craft of software development.</div>
+      <p>A curated collection of my personal insights, opinions, and reflections on the craft of software development.</p>
     </div>
   </header>
 
   <main>
     <div class="wrap">
-      <section class="grid" aria-label="Documents list">
+      <section class="grid">
 
-        <!-- CARD 1 -->
-        <article class="card" aria-labelledby="doc1-title">
+        <article class="card">
           <div id="doc1-title" class="doc-title">Behaviour-Driven Development for Better Software Products</div>
           <p class="desc">Transforming Collaboration, Clarity, and Quality in Modern Software Teams</p>
           <div class="meta">
