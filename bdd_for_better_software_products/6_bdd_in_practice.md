@@ -5,7 +5,7 @@
 A specification-by-example activity facilitates a common understanding of expected behaviour through examples. It applies to a wide range of use cases across any domain: calculation, aggregation, orchestration, eventing, management, and workflow.
 
 - The **Specification-by-Example** activity is conducted during **Example Mapping** sessions.
-- Formalisation of expected system behaviour is achieved through **acceptance scenarios** expressed in the domain language and formalised using **Gherkin** syntax.
+- Formalisation of expected system behaviour is achieved through **acceptance scenarios** expressed in the domain language and formalised using [Gherkin](https://cucumber.io/docs/gherkin/) syntax.
 - It requires practice; finding good wording has to be learned by doing. Efficient wording can be easily understood, validated, and automated.
 - Automated testing means developing **automated acceptance tests** using glue code.
 - The development of production code is then driven by existing acceptance tests (ATDD).
@@ -26,10 +26,10 @@ An Example mapping session facilitates **structured conversations** between the 
 
 ### Feature, story, business rule, scenario, example
 
-- One feature is explained by one or more scenarios grouped in stories.
+- One **feature** is explained by one or more **scenarios** grouped in **stories**.
 - One story usually groups one or more scenarios and represents a feature increment with business value.
-- One or more scenarios or examples typically support a single business rule.
-- One or more examples support one scenario.
+- One or more scenarios or examples typically support a single **business rule**.
+- One or more **examples** support one scenario.
 - One scenario for each nominal case.
 - One scenario for each edge case.
 - One scenario for each negative or error case.
@@ -38,7 +38,7 @@ An Example mapping session facilitates **structured conversations** between the 
 
 Writing scenarios helps build a common, ubiquitous language that everyone can understand and validate.
 
-As it requires some experience and a particular way of thinking, it is recommended that the test engineer or the software engineer perform this activity. Feedback from the Product person can be done once they have drafted the **Gherkin** specification.
+As it requires some experience and a particular way of thinking, it is recommended that the test engineer or the software engineer perform this activity. Feedback from the Product person can be done once they have drafted the [Gherkin](https://cucumber.io/docs/gherkin/) specification.
 
 A scenario consists of a set of preconditions about the initial state or context, a set of actions (usually one), and a set of assertions (or postconditions) about the final state or context.
 
@@ -100,7 +100,7 @@ Feature: To be able to manage a set of existing clients in a persistent way
      And the returned client is added to the set of existing clients
 ```
 
-More BDD scenarios: [Blueprint API](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/acceptanceTest/resources/features/client)
+More scenarios: [Blueprint API](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/acceptanceTest/resources/features/client)
 
 ## Scenarios validation
 
@@ -110,7 +110,7 @@ These acceptance scenarios form the foundation of an executable specification an
 
 ## Acceptance testing
 
-Acceptance tests support **high-level functional and non-functional testing**, including testing new feature increments and regression testing.
+Acceptance tests support high-level **functional and non-functional** testing, including testing new feature increments and regression testing.
 
 This activity is usually done by a test engineer of a quality assurance team to validate a delivered feature increment before its deployment to production. BDD promotes a shift-left approach, making both the Developer and QA engineer roles accountable for acceptance testing.
 
@@ -160,20 +160,21 @@ Well-written BDD scenarios are written in a naturally high-level domain language
 
 ![](images/img_acceptance_test_scope.png)
 
-Examples:
-- [Blueprint API - AT at the API level](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/test/kotlin/edu/software/craftsmanship/blueprint/at/client)
-- [Blueprint API - AT at the domain level](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/acceptanceTest/kotlin/edu/obya/blueprint/problemsolving/at/steps/mumbling)
-
 ### Remarks and recommendations
 
-**Acceptance tests** are high-level integration tests defined at the feature level. Supported by natural language and Gherkin syntax, their self-documentation is accessible to all stakeholders and emphasises the implemented and tested behaviour, including its preconditions and postconditions. 
-They usually cover functional requirements and may also test non-functional requirements. They should be applied to both the Application architecture layer and the Domain architecture layer.
+**Acceptance tests** are high-level integration tests defined at the feature level. Supported by natural language and Gherkin syntax, their self-documentation is accessible to all stakeholders and emphasises the implemented and tested behaviour, including its preconditions and postconditions. They usually cover functional requirements and may also test non-functional requirements. They should be applied to both the Application architecture layer and the Domain architecture layer.
 
 **Contract tests** apply to the web infrastructure layer and checks the implementation of the web API against the pre-existing API specification contract.
 
-**Smoke tests** may be a subset of nominal acceptance tests to be played in the production environment.
+**Smoke tests** may be a subset of nominal acceptance tests to be played in the production environment to check the availability of the expected functional behaviour.
 
 **xUnit tests**, due to their technical nature, do not resonate with all stakeholders and therefore do not provide evidence of which functional requirements are implemented and tested.
+
+Examples:
+- [Blueprint API - AT at the API level](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/acceptanceTest/kotlin/edu/obya/blueprint/client/at)
+- [Blueprint API - AT at the domain level](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/acceptanceTest/kotlin/edu/obya/blueprint/problemsolving/at)
+- [Blueprint API - Contract tests](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/contractTest/kotlin/edu/obya/blueprint/client/cdc)
+- [Blueprint API - xUnit tests](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/test/kotlin/edu/obya/blueprint/client)
 
 ## BDD and agility
 
@@ -192,5 +193,7 @@ Scenarios are developed against single acceptance tests, which can be executed b
 A BDD-driven specification and [Serenity-BDD](https://serenity-bdd.github.io/docs/guide/user_guide_intro) tooling enable living documentation
 
 ## Evidence of system well-being
+
 With [Serenity-BDD](https://serenity-bdd.github.io/docs/guide/user_guide_intro) test execution reports, auditors can be provided with proof that all requirements covered by the system in place are supported by documented, continuous acceptance tests. It supports Java technology only.
+
 With [Allure](http://allure.qatools.ru/) test execution reports, more evidence can be provided to auditors that testing is done in depth, even at lower levels of the test pyramid (e.g., component integration testing and component unit testing), and is uniformly applied across multiple technologies (Python/Java/Kotlin).

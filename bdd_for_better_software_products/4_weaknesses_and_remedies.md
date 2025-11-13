@@ -14,7 +14,7 @@ The testing activity usually focuses on checking newly added features and regres
 
 ![](images/img_regression_testing.png)
 
-💡 Could we innovate on the tester's activity by automating it and giving them more impact upstream?
+💡 Could we innovate on the tester's activity by automating it and giving him more impact upstream?
 
 ## Loss of trust
 
@@ -36,7 +36,7 @@ The absence of continuous delivery means less feedback and, consequently, fewer 
 
 What does the system solve? What are the features? What are the nominal and edge scenarios? What about testing evidence?
 
-The Agile software development manifesto prioritises working software over comprehensive documentation. Therefore, the sources of documentation on what the developed system solves are production code, test code, and mental knowledge, often distributed across these. Consequently, more pressure is put on well-crafted code. In addition, narrative documentation sources can still be valuable for setting the context, but they are usually written at a high level and may no longer reflect the behaviour of the completed system.
+The [Manifesto for Agile Software Development](https://agilemanifesto.org/) prioritises working software over comprehensive documentation. Therefore, the sources of documentation on what the developed system solves are production code, test code, and mental knowledge, often distributed across these. Consequently, more pressure is put on well-crafted code. In addition, narrative documentation sources can still be valuable for setting the context, but they are usually written at a high level and may no longer reflect the behaviour of the completed system.
 
 ![](images/img_loss_of_documentation.png)
 

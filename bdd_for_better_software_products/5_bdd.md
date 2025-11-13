@@ -14,11 +14,11 @@ This technique proposes a context for the **collaborative specification**, aimin
 
 ## Domain-driven
 
-The issued specification artefact uses a natural-language domain-specific vocabulary that every stakeholder understands: product person, software, and test engineers.
+The issued specification artefact uses a natural-language, domain-specific vocabulary that every stakeholder understands: product person, software engineers, and QA engineers.
 
 ## Documentation-driven
 
-This artefact, written in Gherkin syntax, explains the system behaviour using examples grouped into scenarios that describe the system use cases and business rules.
+This artefact, written in [Gherkin](https://cucumber.io/docs/gherkin/) syntax, explains the system behaviour using examples grouped into scenarios that describe the system use cases and business rules.
 
 Here is an example that uses a generic scenario to describe the behaviour of a problem-solving function; the Examples section defines the input and output values:
 
@@ -53,4 +53,4 @@ BDD was initially introduced in 2003 by Dan North as a response to test-driven d
 
 ## Shift-left
 
-BDD enables modern software development and promotes a shift-left approach in which both the Developer and the QA engineer contribute their perspectives to acceptance scenario mapping. The QA engineer's role can now better influence the completeness and the correctness of every delivery.
+BDD enables modern software development and promotes a shift-left approach in which both the Developer and the QA engineer contribute their perspectives to acceptance scenario mapping. The QA engineer's role can now better influence the completeness and the correctness of every delivery. The Developer's role should leverage this partnership with the QA engineer to strengthen its test-first approach.
