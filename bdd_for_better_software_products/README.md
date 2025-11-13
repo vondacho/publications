@@ -1,3 +1,3 @@
 # Why
 
-We need to minimise friction caused by misunderstandings between software development and software requirements, proposing an innovative approach to software specification. This approach should facilitate a common understanding and encourage each stakeholder—the product person, software engineer, and test engineer—to be accountable for the quality of the delivered increments.
+We need to minimise the friction caused by misunderstandings between the software development team and those responsible for the software requirements by proposing an innovative approach to software specification. The **Behaviour-Driven Development** technique promotes a shared understanding and holds each stakeholder — the product owner, software engineer and test engineer — accountable for the quality of the delivered increments.
