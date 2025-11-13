@@ -162,19 +162,19 @@ Well-written BDD scenarios are written in a naturally high-level domain language
 
 ### Remarks and recommendations
 
-**Acceptance tests** are high-level integration tests defined at the feature level. Supported by natural language and Gherkin syntax, their self-documentation is accessible to all stakeholders and emphasises the implemented and tested behaviour, including its preconditions and postconditions. They usually cover functional requirements and may also test non-functional requirements. They should be applied to both the Application architecture layer and the Domain architecture layer.
+**Acceptance tests** (AT) are high-level integration tests defined at the feature level. Supported by natural language and Gherkin syntax, their self-documentation is accessible to all stakeholders and emphasises the implemented and tested behaviour, including its preconditions and postconditions. They usually cover functional requirements and may also test non-functional requirements. They should be applied to both the Application architecture layer and the Domain architecture layer.
 
-**Contract tests** apply to the web infrastructure layer and checks the implementation of the web API against the pre-existing API specification contract.
+**Contract tests** (CT) apply to the web infrastructure layer and checks the implementation of the web API against the pre-existing API specification contract.
 
-**Smoke tests** may be a subset of nominal acceptance tests to be played in the production environment to check the availability of the expected functional behaviour.
+**Smoke tests** (ST) may be a subset of nominal acceptance tests to be played in the production environment to check the availability of the expected functional behaviour.
 
-**xUnit tests**, due to their technical nature, do not resonate with all stakeholders and therefore do not provide evidence of which functional requirements are implemented and tested.
+**xUnit tests** (UT/IT), due to their technical nature, do not resonate with all stakeholders and therefore do not provide evidence of which functional requirements are implemented and tested.
 
 Examples:
-- [Blueprint API - AT at the API level](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/acceptanceTest/kotlin/edu/obya/blueprint/client/at)
-- [Blueprint API - AT at the domain level](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/acceptanceTest/kotlin/edu/obya/blueprint/problemsolving/at)
-- [Blueprint API - Contract tests](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/contractTest/kotlin/edu/obya/blueprint/client/cdc)
-- [Blueprint API - xUnit tests](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/test/kotlin/edu/obya/blueprint/client)
+- [Blueprint API - AT - API level](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/acceptanceTest/kotlin/edu/obya/blueprint/client/at)
+- [Blueprint API - AT - Domain level](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/acceptanceTest/kotlin/edu/obya/blueprint/problemsolving/at)
+- [Blueprint API - CT](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/contractTest/kotlin/edu/obya/blueprint/client/cdc)
+- [Blueprint API - UT/IT](https://github.com/vondacho/arch-blueprint-kotlin/tree/master/src/test/kotlin/edu/obya/blueprint/client)
 
 ## BDD and agility
 
