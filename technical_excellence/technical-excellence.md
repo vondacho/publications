@@ -1,5 +1,4 @@
 ## Technical Excellence or the mastery of practices
-February 2020
 
 ![](image2.png)
 

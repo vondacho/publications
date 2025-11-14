@@ -1,5 +1,4 @@
 ## Clean Code - Serenity and economy
-February 2020
 
 ![](image3.jpeg)
 
