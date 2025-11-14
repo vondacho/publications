@@ -1,5 +1,6 @@
 ## Software Craftsmanship is above all a mindset
 February 2020
+
 ![](image1.jpg)
 
 ### ANALYSTS, ARCHITECTS, SOFTWARE DEVELOPERS

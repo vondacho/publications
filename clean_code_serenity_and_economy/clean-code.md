@@ -1,5 +1,6 @@
 ## Clean Code - Serenity and economy
 February 2020
+
 ![](image3.jpeg)
 
 This article is primarily aimed at software developers, but the form remains readable for business analysts and management actors; they will understand the importance of quality code at the company level and their role as quality agents or influencers.
@@ -36,7 +37,7 @@ Optimising writing time, developing more calmly and ensuring constant productivi
 
 Clean Code refers to quality software code and editorial practices that are entirely under the control of the software developers and can be configured as desired. It is a question of collectively defining principles of writing and software design, of thinking before coding, of sharing reflections, and of asking for feedback. The code does not belong to anyone; it belongs to the company. We must now think of “community”.
 
-Clean Code can be read and enhanced by a developer other than its original author – Robert C. Martin
+>Clean Code can be read and enhanced by a developer other than its original author – Robert C. Martin
 
 Well-crafted code can be defined by the following intrinsic qualities:
 <ul>
