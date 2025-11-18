@@ -1,11 +1,13 @@
 :root {
 --base-font-size: 1.5rem;
---font-size-xl: 2.5rem;
---heading-h2-font-weight: 300;
---font-size-l: 2rem;
---heading-h3-font-weight: 300;
+--base-font-weight: 300;
+--font-size-xxl: 2.5rem;
+--font-size-xl: 2rem;
+--font-size-l: 1.5rem;
 --link-color: #daa000;
+--link-text-decoration: none;
 --blockquote-padding: 1rem 1rem;
 --blockquote-font-style: italic;
 --blockquote-border-color: white;
+--code-font-size: 0.75rem;
 }
