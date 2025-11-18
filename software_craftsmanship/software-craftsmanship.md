@@ -2,7 +2,7 @@
 
 ![](image1.jpg)
 
-### ANALYSTS, ARCHITECTS, SOFTWARE DEVELOPERS
+### Analysts, Architects, Developers
 
 The craftsman applies himself or herself to his or her work; he or she shows passion and determination in the search for the ideal form.
 
