@@ -77,7 +77,8 @@
 
 @media (max-width: 1000px) {
   .grid {
-    grid-template-columns:repeat(1,minmax(0,1fr));
+    width: 100%;
+    grid-template-columns: 100%;
     margin: 100px 1rem 2rem 1rem;
   }
 }
