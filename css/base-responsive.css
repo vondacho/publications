@@ -20,7 +20,7 @@
   transition: 0.3s;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1200px) {
   .burger {
     display: flex;
   }
@@ -80,8 +80,8 @@
   }
 }
 
-/* === Responsive pour mobile (<= 768px) === */
-@media (max-width: 768px) {
+/* === Responsive pour mobile (<= 600px) === */
+@media (max-width: 680px) {
 
   .grid {
     grid-template-columns:repeat(1,minmax(0,1fr));
