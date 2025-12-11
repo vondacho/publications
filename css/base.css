@@ -133,7 +133,7 @@ small {
   display: grid;
   grid-template-columns:repeat(4,minmax(0,1fr));
   gap: 0.5rem;
-  margin: 160px 1rem 2rem 1rem;
+  margin: 140px 1rem 2rem 1rem;
 }
 
 .footer {
