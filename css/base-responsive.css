@@ -20,7 +20,7 @@
   transition: 0.3s;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   .burger {
     display: flex;
   }
@@ -75,7 +75,7 @@
   }
 }
 
-@media (min-width: 800px) and (max-width: 1200px) {
+@media (max-width: 800px) {
   .grid {
     grid-template-columns:repeat(1,minmax(0,1fr));
     margin: 100px 1rem 2rem 1rem;
