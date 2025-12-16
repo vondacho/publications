@@ -20,7 +20,7 @@
   transition: 0.3s;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .burger {
     display: flex;
   }
@@ -75,10 +75,13 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .grid {
-    width: 100%;
     grid-template-columns: 100%;
     margin: 100px 1rem 2rem 1rem;
+  }
+
+  .footer {
+    padding: 60px 2vw 20px 2vw;
   }
 }
