@@ -9,11 +9,10 @@ footer: https://vondacho.github.io<br>https://vondacho.github.io/cv.html
 # About me
 Olivier von Dach, Lausanne, CH, 1972, FR|EN|DE|ES
 Career started in 1996.
-Passionate about Software Development.
-Continuous learner.
+Full stack Software developer, Craftsman, Architect.
 Quality-driven Software Development promoter.
-Multi-role competency.
-Courage, Honesty, Empathy.
+Passionate about Software Development.
+Courage, Honesty, Professionalism.
 
 ![bg right:25% width:200](me.png) <!-- Setting width to 200px -->
 
