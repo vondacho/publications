@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Slides - Olivier von Dach</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/base-responsive.css">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css">
+  <style>
+    :root{
+      --bg:#0b0f17; --panel:#0f172a; --ink:#e6edf6; --muted:#7498ce; --accent:#60a5fa; --border:#1f2a44;
+      --card:#f0f0f0; --chip:#333; --shadow: 0 10px 30px rgba(0,0,0,.25); --hd:#333
+    }
+    .card {
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding: 1rem;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      box-shadow:var(--shadow);
+      min-height:200px;
+    }
+    .card:hover {
+      transform:translateY(-2px);
+      transition:transform .15s ease
+    }
+    .meta {
+      display:flex;
+      flex-wrap:wrap;
+      gap:6px;
+      margin-top:2px;
+    }
+    .chip {
+      background:var(--chip);
+      border:1px solid #213056;
+      border-radius:999px;
+      padding:4px 9px;
+      color:#c7d2e6;
+    }
+    .actions {
+      margin-top:auto;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .btn {
+      text-decoration:none;
+      background-color: #ffbb00;
+      color: #111;
+      border: none;
+      padding: 18px 38px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #e0b739;
+    }
+    .btn.secondary {
+      background-color: transparent;
+      color: #333;
+      border: 1px solid #999;
+      padding: 17px 25px;
+    }
+    .btn.secondary:hover {
+      background-color: #e2e2e2;
+    }
+  </style>
+  <script type="text/javascript" src="../js/burger.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="../index.html">Online portfolio</a>
+      </div>
+      <button class="burger" id="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html">Articles</a></li>
+        <li><a href="index.html" class="active">Slides</a></li>
+        <li><a href="http://vondacho.github.io/">Olivier von Dach</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/vondacho/" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
+          <a href="https://www.github.com/vondacho/" target="_blank"><i class="fi fi-brands-github"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="grid">
+
+      <article class="card">
+        <h3>Contract-Driven Development &mdash; Part I</h3>
+        <p class="desc">Migrating the Agreement: making an API migration a shared, executable contract between backend, frontend and mobile teams.</p>
+        <div class="meta">
+          <span class="chip">2026</span>
+          <span class="chip">14 slides</span>
+          <span class="chip">Part I</span>
+        </div>
+        <div class="actions">
+          <a class="btn" href="contract_driven_development_migration_part1.html" target="_blank" rel="noopener">🖥️ Open deck</a>
+          <a class="btn secondary" href="https://github.com/vondacho/publications/blob/main/slides/contract_driven_development_parts_I_II_script.md" target="_blank" rel="noopener">🗒️ Speaker script</a>
+          <a class="btn secondary" href="https://github.com/vondacho/publications/blob/main/slides/contract_driven_development_concise_speaker_script.md" target="_blank" rel="noopener">🗒️ Concise script</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Contract-Driven Development &mdash; Part II</h3>
+        <p class="desc">From Contract to Capability: integrating Microcks into the development loop to turn contracts into running mocks and tests.</p>
+        <div class="meta">
+          <span class="chip">2026</span>
+          <span class="chip">11 slides</span>
+          <span class="chip">Part II</span>
+        </div>
+        <div class="actions">
+          <a class="btn" href="microcks_integration_part2.html" target="_blank" rel="noopener">🖥️ Open deck</a>
+          <a class="btn secondary" href="https://github.com/vondacho/publications/blob/main/slides/contract_driven_development_parts_I_II_script.md" target="_blank" rel="noopener">🗒️ Speaker script</a>
+          <a class="btn secondary" href="https://github.com/vondacho/publications/blob/main/slides/contract_driven_development_concise_speaker_script.md" target="_blank" rel="noopener">🗒️ Concise script</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Microcks for Quality Assurance</h3>
+        <p class="desc">Adding a controlled simulation layer to the QA portfolio, to design test conditions instead of waiting for reality to produce them.</p>
+        <div class="meta">
+          <span class="chip">2026</span>
+          <span class="chip">12 slides</span>
+          <span class="chip">QA</span>
+        </div>
+        <div class="actions">
+          <a class="btn" href="microcks_for_quality_assurance.html" target="_blank" rel="noopener">🖥️ Open deck</a>
+          <a class="btn secondary" href="https://github.com/vondacho/publications/blob/main/slides/microcks_for_quality_assurance_speaker_script.md" target="_blank" rel="noopener">🗒️ Speaker script</a>
+          <a class="btn secondary" href="https://github.com/vondacho/publications/blob/main/slides/microcks_for_quality_assurance_condensed_script.md" target="_blank" rel="noopener">🗒️ Condensed script</a>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.linkedin.com/in/vondacho/" target="_blank"><i class="fi fi-brands-linkedin"></i></a>
+      <a href="https://www.github.com/vondacho/" target="_blank"><i class="fi fi-brands-github"></i></a>
+    </div>
+    <p style="text-align:center;" class="copyright">&copy; 2026 <a href="../index.html">Olivier von Dach</a></p>
+  </footer>
+
+  <script>setupBurgerMenu(document);</script>
+</body>
+</html>
