@@ -132,8 +132,10 @@ small {
 .grid {
   display: grid;
   grid-template-columns: repeat(4,minmax(0,1fr));
-  gap: 0.5rem;
+  gap: 1.5rem;
   margin-top: 140px;
+  margin-bottom: 4rem;
+  padding: 0 2rem;
 }
 
 .footer {

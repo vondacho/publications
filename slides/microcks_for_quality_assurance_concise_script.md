@@ -1,4 +1,4 @@
-# Microcks for Quality Assurance --- Condensed Speaker Script
+# Microcks for Quality Assurance --- Concise Speaker Script
 
 > **Target pace:** 45--75 seconds per slide.\
 > Explain the visual; land the bold line.
