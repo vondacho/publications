@@ -234,11 +234,6 @@ Focus examples on migration friction:
 
 **Key line:** **A mock is only as useful as the examples behind it.**
 
-**Developer note:** We already have Spring Boot stubs. Microcks gives us
-a lighter progression: examples → dispatch rules → response templates →
-Groovy/JavaScript. Keep coded stubs for cases that genuinely require
-application-level simulation.
-
 ## 5 --- Nearshore Consumer Workflow
 
 **Core message:** Frontend/mobile should not wait for backend
